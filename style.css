@@ -1,0 +1,56 @@
+#clockdiv {
+  font-family: sans-serif;
+  color: limegreen;
+  display: inline-block;
+  font-weight: 100;
+  text-align: center;
+  font-size: 30px;
+}
+
+#clockdiv > div {
+  padding: 10px;
+  border-radius: 3px;
+  background: #000;
+  display: inline-block;
+}
+
+#clockdiv div > span {
+  padding: 15px;
+  border-radius: 3px;
+  background: #000;
+  display: inline-block;
+}
+
+.smalltext {
+  padding-top: 5px;
+  font-size: 16px;
+}
+
+.winner-wrapper {
+    display: inline-block;
+    padding:20px;
+    background:black;
+    position: relative;
+}
+
+#winner_box {
+    padding:40px;
+    background: black;
+    color: limegreen;
+    margin:20px;
+    font-family: sans-serif;
+    font-size: 40px;
+}
+
+#token_prices {
+    color:white;
+}
+
+.confetti {
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;height: 100%;width:100%;
+    display:none;
+}

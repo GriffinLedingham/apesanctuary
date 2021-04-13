@@ -1,0 +1,50 @@
+<html>
+    <link>
+        <link type="text/css" rel="stylesheet" href="/style.css"></link>
+        <script src="/app.js"></script>
+        <script>
+            window.onload = function() {
+              var context = new AudioContext();
+            }
+        </script>
+    </head>
+    <body style="text-align: center;background-image: url('/monke.jpeg');" onload="start();">
+        <div id="clockdiv">
+            <div>
+              <span class="days"></span>
+              <div class="smalltext">Days</div>
+            </div>
+            <div>
+              <span class="hours"></span>
+              <div class="smalltext">Hours</div>
+            </div>
+            <div>
+              <span class="minutes"></span>
+              <div class="smalltext">Minutes</div>
+            </div>
+            <div>
+              <span class="seconds"></span>
+              <div class="smalltext">Seconds</div>
+            </div>
+        </div>
+        <br>
+        <div id="winner_box">
+            <span id="winner_name"></span> is winning!
+            <br>
+            <span id="token_prices"></span>
+        </div>
+        <div>
+            <div class="winner-wrapper" id="mike_winning">
+                <img src="/mike.jpg" />
+                <img class="confetti" src="/confetti.gif" />
+            </div>
+            <div class="winner-wrapper" id="brett_winning">
+                <img src="/brett.jpg" />
+                <img class="confetti" src="/confetti.gif" />
+            </div>
+        </div>
+        <br>
+        <br>
+        <audio id="player" autoplay controls><source src="fc.mp3" type="audio/mp3"></audio>
+    </body>
+</html>
