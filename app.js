@@ -49,7 +49,6 @@ function start() {
       fetch(`https://api.coingecko.com/api/v3/coins/binancecoin/market_chart/range?vs_currency=usd&from=1618275000&to=${Math.round(+new Date()/1000)}`)
       .then(response => response.json())
       .then(binanceData => {
-        console.log(ethData)
         const ethStart = ethData.prices[0][1]
         const ethEnd = ethData.prices[ethData.prices.length - 1][1]
         const ethDelta = -100 * ( (ethStart - ethEnd) / ( (ethStart+ethEnd)/2 ) );
@@ -66,10 +65,8 @@ function start() {
           (
             ${bnbDelta>0?'+':''}${bnbDelta.toFixed(2)}% BNB vs.
             ${ethDelta>0?'+':''}${ethDelta.toFixed(2)}% ETH
-
           )
         `;
-
       });
   });
 }
